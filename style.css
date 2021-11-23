@@ -1,0 +1,24 @@
+body {
+    background-color: #060726;
+    margin: 0;
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+}
+
+a {
+    color: antiquewhite;
+}
+
+.container {
+    margin: 0 auto;
+    width: 100px;
+}
+
+.cash-container {
+    margin: 0 auto;
+    width: 200px;
+    height: 200px;
+    background-color: gainsboro;
+}
