@@ -51,6 +51,10 @@ body {
     background-color: #514aac;
 }
 
+.discount-btn-acive {
+    background-color: #47419c;
+}
+
 .order-contener {
     overflow-y: auto;
     max-height: 200px;

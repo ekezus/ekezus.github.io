@@ -64,9 +64,9 @@ const cashRegister = {
         <div class="cash-left">
             <div class="discount">
                 Rabat:
-                <span class="discount-btn" @click="addDiscount(0)">0%</span>
-                <span class="discount-btn" @click="addDiscount(25)">25%</span>
-                <span class="discount-btn" @click="addDiscount(50)">50%</span>
+                <span class="discount-btn" :class="{'discount-btn-acive': discount == 0}" @click="addDiscount(0)">0%</span>
+                <span class="discount-btn" :class="{'discount-btn-acive': discount == 25}" @click="addDiscount(25)">25%</span>
+                <span class="discount-btn" :class="{'discount-btn-acive': discount == 50}" @click="addDiscount(50)">50%</span>
             </div>
             <div class="order-contener ">
                 <div v-for="order in getOrder" class="flex order" @click="remove(order.id)">
