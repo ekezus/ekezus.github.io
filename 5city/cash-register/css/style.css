@@ -99,11 +99,29 @@ body {
 }
 
 .top-bar input {
-    width: 100px;
+    width: 70px;
     margin-right: 3px;
     border-radius: 10px;
     border: none;
     outline: none;
+}
+
+.copy {
+    background-color: #03A9F4;
+    min-width: 34px;
+    min-height: 34px;
+    border-radius: 10px;
+    margin-right: 3px;
+    background-image: url('../img/copy.png');
+    background-repeat: no-repeat;
+    background-position: center;
+    cursor: pointer;
+}
+.copy:hover {
+    background-color: #039BE5;
+}
+.copy:active{
+    background-color: #0277BD;
 }
 
 .btn {

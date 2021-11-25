@@ -26,6 +26,9 @@ const cashRegister = {
                 this.menu.forEach(el => el.quantity = 0);
             }
         },
+        copy() {
+            navigator.clipboard.writeText(this.price);
+        },
         add(id) {
             let obj = this.menu.find(el => el.id == id);
             obj.quantity++;
@@ -79,7 +82,8 @@ const cashRegister = {
         </div>
         <div class="cash-right">
             <div class="flex top-bar">
-                <input type="number" @input.number="addPrice" :value="getPrice"> 
+                <input type="number" @input.number="addPrice" :value="getPrice">
+                <div class="copy" @click="copy"></div>
                 <div class="btn" @click="save" :class="{'btn-disabled': price == 0}">Wystaw</div>
             </div>
             <div class="flex product-list">
